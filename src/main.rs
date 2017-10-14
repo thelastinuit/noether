@@ -1,4 +1,5 @@
 extern crate noether;
+
 use std::env;
 use noether::BalanceChecker;
 
