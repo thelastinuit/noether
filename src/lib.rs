@@ -1,6 +1,7 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-    }
-}
+#![crate_name = "noether"]
+#![crate_type = "rlib"]
+
+mod parentheses;
+
+pub use parentheses::BalanceChecker;
+
