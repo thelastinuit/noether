@@ -1,13 +1,15 @@
 version: "2"
+volumes:
+  gems:
+    driver: local
 
 services:
   console:
-    image: thelastinuit/noether:development
-    build:
-      context: .
-      dockerfile: dev.Dockerfile
+    image: thelastinuit/starlord
     working_dir: /code
+    command: irb
     volumes:
         - .:/code
+        - gems:/usr/local/bundle
     stdin_open: true
     tty: true
