@@ -112,7 +112,7 @@ module IteratedLocalSearch
         start_point = rand permutation.size
         end_point = rand permutation.size
         exclude = [start_point]
-        (exclude << start_point).zero? ? permutation.size - 1 : start_point - 1
+        exclude << start_point.zero? ? permutation.size - 1 : start_point - 1
         exclude << start_point == permutation.size - 1 ? 0 : start_point + 1
         end_point = rand(permutation.size) while exclude.include?(end_point)
         start_point, end_point = end_point, start_point if end_point < start_point
