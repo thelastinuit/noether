@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 require "benchmark/ips"
-require "./random_search"
+require_relative "random_search"
 
 Benchmark.ips do |x|
   x.report("small-random-search") do

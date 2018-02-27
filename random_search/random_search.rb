@@ -1,4 +1,4 @@
-require "./core"
+require_relative "core"
 
 module RandomSearch
   class << self

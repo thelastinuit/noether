@@ -1,4 +1,4 @@
-require "./space"
+require_relative "space"
 
 module RandomSearch
   class Core
