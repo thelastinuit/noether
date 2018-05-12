@@ -1,9 +1,9 @@
 require "spec_helper"
 
 describe RandomSearch::Space do
-  subject {
-    RandomSearch::Space.new [1,1]
-  }
+  subject do
+    RandomSearch::Space.new [1, 1]
+  end
 
   describe "#size" do
     it {

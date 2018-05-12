@@ -1,5 +1,5 @@
-require 'simplecov'
-require_relative '../random_search/random_search'
+require "simplecov"
+require_relative "../random_search/random_search"
 
 SimpleCov.start "rails" do
   add_filter [/benchmarks.rb/]
